@@ -1,0 +1,322 @@
+2023.12.14 16:04:37 INFO  Started: Metals version 1.2.0 in folders '/Users/ywthoho/workspace/forex-proxy' for client Visual Studio Code 1.85.0.[0m
+2023.12.14 16:04:38 WARN  Build server is not auto-connectable.[0m
+2023.12.14 16:04:50 INFO  running '/Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/z7/xqfm1_x5077d1yfnb436vz5m0000gp/T/metals13749216132672273568/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2023.12.14 16:04:51 WARN  no build target for: /Users/ywthoho/workspace/forex-proxy/project/metals.sbt[0m
+2023.12.14 16:04:51 WARN  no build target for: /Users/ywthoho/workspace/forex-proxy/project/project/metals.sbt[0m
+2023.12.14 16:04:51 INFO  skipping build import with status 'Started'[0m
+2023.12.14 16:04:51 ERROR [info] [launcher] getting org.scala-sbt sbt 1.8.0  (this may take some time)...[0m
+2023.12.14 16:05:07 ERROR [info] [launcher] getting Scala 2.12.17 (for sbt)...[0m
+2023.12.14 16:05:09 INFO  [info] welcome to sbt 1.8.0 (AdoptOpenJDK Java 11.0.11)[0m
+2023.12.14 16:05:12 INFO  no build target found for /Users/ywthoho/workspace/forex-proxy/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.1[0m
+2023.12.14 16:05:13 INFO  [info] loading settings for project forex-proxy-build-build-build from metals.sbt ...[0m
+2023.12.14 16:05:15 INFO  [info] loading project definition from /Users/ywthoho/workspace/forex-proxy/project/project/project[0m
+2023.12.14 16:05:21 INFO  [info] loading settings for project forex-proxy-build-build from metals.sbt ...[0m
+2023.12.14 16:05:21 INFO  [info] loading project definition from /Users/ywthoho/workspace/forex-proxy/project/project[0m
+2023.12.14 16:05:30 INFO  [success] Generated .bloop/forex-proxy-build-build.json[0m
+2023.12.14 16:05:30 INFO  [success] Total time: 9 s, completed Dec 14, 2023, 4:05:31 PM[0m
+2023.12.14 16:05:33 INFO  [info] loading settings for project forex-proxy-build from metals.sbt,plugins.sbt ...[0m
+2023.12.14 16:05:33 INFO  [info] loading project definition from /Users/ywthoho/workspace/forex-proxy/project[0m
+2023.12.14 16:05:44 INFO  [success] Generated .bloop/forex-proxy-build.json[0m
+2023.12.14 16:05:44 INFO  [info] compiling 1 Scala source to /Users/ywthoho/workspace/forex-proxy/project/target/scala-2.12/sbt-1.0/classes ...[0m
+2023.12.14 16:05:44 INFO  [info] Non-compiled module 'compiler-bridge_2.12' for Scala 2.12.17. Compiling...[0m
+2023.12.14 16:06:02 INFO  [info]   Compilation completed in 17.679s.[0m
+2023.12.14 16:06:05 INFO  [info] done compiling[0m
+2023.12.14 16:06:05 INFO  [success] Total time: 32 s, completed Dec 14, 2023, 4:06:05 PM[0m
+2023.12.14 16:06:09 INFO  [info] loading settings for project forex-proxy from build.sbt ...[0m
+2023.12.14 16:06:09 INFO  [info] set current project to forex (in build file:/Users/ywthoho/workspace/forex-proxy/)[0m
+2023.12.14 16:06:25 INFO  [success] Generated .bloop/forex-proxy.json[0m
+2023.12.14 16:06:25 INFO  [success] Generated .bloop/forex-proxy-test.json[0m
+2023.12.14 16:06:25 INFO  [success] Total time: 15 s, completed Dec 14, 2023, 4:06:25 PM[0m
+2023.12.14 16:06:25 INFO  time: ran 'sbt bloopInstall' in 1m34s[0m
+2023.12.14 16:06:25 INFO  Attempting to connect to the build server...[0m
+2023.12.14 16:06:25 INFO  Setting up current java home /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home in /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.14 16:06:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.14 16:06:53 INFO  Attempting to connect to the build server...[0m
+2023.12.14 16:06:53 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.14 16:06:53 INFO  Attempting to connect to the build server...[0m
+2023.12.14 16:06:53 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.14 16:06:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/project/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.14 16:06:53 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/project/project/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.14 16:06:55 INFO  time: Connected to build server in 30s[0m
+2023.12.14 16:06:55 INFO  Connected to Build server: Bloop v1.5.13[0m
+2023.12.14 16:06:56 INFO  time: Imported build in 0.74s[0m
+2023.12.14 16:07:14 INFO  time: indexed workspace in 17s[0m
+2023.12.14 16:07:48 INFO  compiling forex-proxy (23 scala sources)[0m
+2023.12.14 16:08:11 INFO  time: compiled forex-proxy in 22s[0m
+2023.12.14 16:08:11 INFO  compiling forex-proxy-build (1 scala source)[0m
+2023.12.14 16:08:12 INFO  Non-compiled module 'compiler-bridge_2.12' for Scala 2.12.17. Compiling...[0m
+2023.12.14 16:08:15 INFO  time: code lens generation in 5.04s[0m
+2023.12.14 16:08:33 INFO    Compilation completed in 20.579s.[0m
+2023.12.14 16:08:38 INFO  time: compiled forex-proxy-build in 27s[0m
+Exception in thread "pool-6-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Dec 14, 2023 4:10:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 147
+Dec 14, 2023 4:10:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 189
+Exception in thread "pool-6-thread-2" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Exception in thread "pool-6-thread-3" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:230)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:152)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023.12.14 16:11:52 INFO  time: code lens generation in 1.18s[0m
+2023.12.14 16:13:05 INFO  time: code lens generation in 1.41s[0m
+Dec 14, 2023 4:16:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 371
+2023.12.18 10:56:27 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+Dec 18, 2023 10:56:27 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/ywthoho/workspace/forex-proxy/.metals/.reports/metals-full/2023-12-18/r_compiler-error_(forex-proxy)_10-56-27-506.md
+2023.12.18 10:56:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.18 10:56:27 INFO  Connected to Build server: Bloop v1.5.13[0m
+2023.12.18 10:56:28 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.18 10:56:28 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.18 10:56:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/project/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.18 10:56:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/project/project/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.20 13:59:58 WARN  Using indexes to guess the definition of port[0m
+2023.12.20 13:59:58 WARN  Using indexes to guess the definition of port[0m
+2023.12.20 13:59:58 WARN  Could not find semantic tokens for: file:///Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/config/ApplicationConfig.scala[0m
+Dec 20, 2023 2:00:54 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.12.20 14:03:21 WARN  Using indexes to guess the definition of syntax[0m
+Dec 20, 2023 2:07:11 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.12.20 14:11:23 WARN  Could not find semantic tokens for: file:///Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/Module.scala[0m
+Dec 20, 2023 2:13:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 981
+2023.12.20 14:13:16 WARN  Could not find semantic tokens for: file:///Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/Module.scala[0m
+Dec 20, 2023 2:13:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 989
+Dec 20, 2023 2:13:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 997
+2023.12.20 14:13:52 INFO  Disconnecting from Bloop session...[0m
+2023.12.20 14:13:52 INFO  Shut down connection with build server.[0m
+2023.12.20 14:13:52 INFO  Shut down connection with build server.[0m
+2023.12.20 14:13:52 INFO  Shut down connection with build server.[0m
+Dec 20, 2023 2:13:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+INFO: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.nio.channels.AsynchronousCloseException
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:126)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.sendCancelNotification(RemoteEndpoint.java:180)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint$1.cancel(RemoteEndpoint.java:150)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$2(BuildServerConnection.scala:425)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.scala:17)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$1(BuildServerConnection.scala:425)
+	at scala.meta.internal.metals.Cancelable$$anon$1.cancel(Cancelable.scala:18)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:29)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:28)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:25)
+	at scala.meta.internal.metals.BuildServerConnection.cancel(BuildServerConnection.scala:365)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:157)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:149)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.nio.channels.AsynchronousCloseException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at java.base/sun.nio.ch.SinkChannelImpl.endWrite(SinkChannelImpl.java:241)
+	at java.base/sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:259)
+	at java.base/java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.base/java.nio.channels.Channels.writeFully(Channels.java:94)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:172)
+	at java.base/java.io.OutputStream.write(OutputStream.java:122)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:152)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:137)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:108)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:67)
+	... 19 more
+
+Dec 20, 2023 2:13:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+INFO: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.nio.channels.AsynchronousCloseException
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:126)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.sendCancelNotification(RemoteEndpoint.java:180)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint$1.cancel(RemoteEndpoint.java:150)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$2(BuildServerConnection.scala:425)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.scala:17)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$1(BuildServerConnection.scala:425)
+	at scala.meta.internal.metals.Cancelable$$anon$1.cancel(Cancelable.scala:18)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:29)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:28)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:25)
+	at scala.meta.internal.metals.BuildServerConnection.cancel(BuildServerConnection.scala:365)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:157)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:149)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.nio.channels.AsynchronousCloseException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at java.base/sun.nio.ch.SinkChannelImpl.endWrite(SinkChannelImpl.java:241)
+	at java.base/sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:259)
+	at java.base/java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.base/java.nio.channels.Channels.writeFully(Channels.java:94)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:172)
+	at java.base/java.io.OutputStream.write(OutputStream.java:122)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:152)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:137)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:108)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:67)
+	... 19 more
+
+Dec 20, 2023 2:13:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+INFO: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.nio.channels.AsynchronousCloseException
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:39)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:126)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.sendCancelNotification(RemoteEndpoint.java:180)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint$1.cancel(RemoteEndpoint.java:150)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$2(BuildServerConnection.scala:425)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.scala:17)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$register$1(BuildServerConnection.scala:425)
+	at scala.meta.internal.metals.Cancelable$$anon$1.cancel(Cancelable.scala:18)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:29)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:28)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:25)
+	at scala.meta.internal.metals.BuildServerConnection.cancel(BuildServerConnection.scala:365)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:157)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:149)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.nio.channels.AsynchronousCloseException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at java.base/sun.nio.ch.SinkChannelImpl.endWrite(SinkChannelImpl.java:241)
+	at java.base/sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:259)
+	at java.base/java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.base/java.nio.channels.Channels.writeFully(Channels.java:94)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:172)
+	at java.base/java.io.OutputStream.write(OutputStream.java:122)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:152)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:137)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:108)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:67)
+	... 20 more
+
+2023.12.20 14:13:52 INFO  Failed to run request with params WorkspaceBuildTargetsResult[0m
+2023.12.20 14:13:52 INFO  Failed to run request with params WorkspaceBuildTargetsResult[0m
+2023.12.20 14:13:52 INFO  Cancelling compilation on Bloop server[0m
+2023.12.20 14:13:52 INFO  Attempting to connect to the build server...[0m
+2023.12.20 14:13:52 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.20 14:13:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.20 14:13:52 INFO  Attempting to connect to the build server...[0m
+2023.12.20 14:13:52 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.20 14:13:52 INFO  Attempting to connect to the build server...[0m
+2023.12.20 14:13:52 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.20 14:13:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/project/project/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.20 14:13:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/project/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.20 14:13:52 INFO  time: Connected to build server in 0.12s[0m
+2023.12.20 14:13:52 INFO  Connected to Build server: Bloop v1.5.13[0m
+2023.12.20 14:13:58 INFO  time: indexed workspace in 5.38s[0m
+2023.12.20 14:14:00 INFO  Cancelling compilation on Bloop server[0m
+2023.12.20 14:14:00 INFO  Cancelling compilation on Bloop server[0m
+2023.12.20 14:14:00 INFO  Disconnecting from Bloop session...[0m
+2023.12.20 14:14:00 INFO  Shut down connection with build server.[0m
+2023.12.20 14:14:03 ERROR timeout: build server 'bloop' during shutdown[0m
+2023.12.20 14:14:03 ERROR timeout: build server 'bloop' during shutdown[0m
+2023.12.20 14:14:03 INFO  Attempting to connect to the build server...[0m
+2023.12.20 14:14:03 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.20 14:14:07 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.20 14:14:07 INFO  Attempting to connect to the build server...[0m
+2023.12.20 14:14:07 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.20 14:14:07 INFO  Attempting to connect to the build server...[0m
+2023.12.20 14:14:07 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.20 14:14:07 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/project/project/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.20 14:14:07 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/project/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.20 14:14:07 INFO  time: Connected to build server in 4.49s[0m
+2023.12.20 14:14:07 INFO  Connected to Build server: Bloop v1.5.13[0m
+2023.12.20 14:14:07 INFO  time: Imported build in 0.27s[0m
+2023.12.20 14:14:12 INFO  time: indexed workspace in 4.89s[0m
+2023.12.20 14:14:14 INFO  compiling forex-proxy (23 scala sources)[0m
+2023.12.20 14:14:14 INFO  compiling forex-proxy-build (1 scala source)[0m
+2023.12.20 14:14:24 INFO  time: compiled forex-proxy-build in 9.88s[0m
+2023.12.20 14:14:38 INFO  time: compiled forex-proxy in 24s[0m
+Dec 20, 2023 2:14:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1073
+Dec 20, 2023 2:15:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1122
+2023.12.20 14:19:24 INFO  compiling forex-proxy (1 scala source)[0m
+2023.12.20 14:19:25 INFO  time: compiled forex-proxy in 1.23s[0m
+2023.12.20 14:20:58 INFO  Disconnecting from Bloop session...[0m
+2023.12.20 14:20:58 INFO  Shut down connection with build server.[0m
+2023.12.20 14:20:58 INFO  Shut down connection with build server.[0m
+2023.12.20 14:20:58 INFO  Shut down connection with build server.[0m
+2023.12.20 14:20:58 INFO  Attempting to connect to the build server...[0m
+2023.12.20 14:20:58 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.20 14:20:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.20 14:20:58 INFO  Attempting to connect to the build server...[0m
+2023.12.20 14:20:58 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.20 14:20:58 INFO  Attempting to connect to the build server...[0m
+2023.12.20 14:20:58 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.20 14:20:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/project/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.20 14:20:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/project/project/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.20 14:20:58 INFO  time: Connected to build server in 0.27s[0m
+2023.12.20 14:20:58 INFO  Connected to Build server: Bloop v1.5.13[0m
+2023.12.20 14:20:58 INFO  time: Imported build in 0.11s[0m
+2023.12.20 14:21:04 INFO  time: indexed workspace in 5.33s[0m
+2023.12.20 14:21:04 INFO  compiling forex-proxy (1 scala source)[0m
+2023.12.20 14:21:09 INFO  time: compiled forex-proxy in 4.98s[0m
+2023.12.20 14:23:08 INFO  compiling forex-proxy (1 scala source)[0m
+2023.12.20 14:23:08 INFO  time: compiled forex-proxy in 0.44s[0m
+2023.12.20 14:23:08 INFO  compiling forex-proxy (1 scala source)[0m
+2023.12.20 14:23:09 INFO  time: compiled forex-proxy in 0.54s[0m
+Dec 20, 2023 2:23:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1407
+2023.12.20 14:24:08 INFO  compiling forex-proxy (2 scala sources)[0m
+2023.12.20 14:24:09 INFO  time: compiled forex-proxy in 1.11s[0m
+2023.12.20 14:24:09 INFO  compiling forex-proxy (2 scala sources)[0m
+2023.12.20 14:24:09 INFO  time: compiled forex-proxy in 0.68s[0m
+Dec 20, 2023 2:24:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1485
+Dec 20, 2023 2:24:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1509
+Dec 20, 2023 2:24:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1510
+Dec 20, 2023 2:24:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1515
+2023.12.20 14:41:43 INFO  compiling forex-proxy (1 scala source)[0m
+2023.12.20 14:41:47 INFO  time: compiled forex-proxy in 3.31s[0m
+2023.12.20 14:41:47 INFO  compiling forex-proxy (1 scala source)[0m
+2023.12.20 14:41:47 INFO  time: compiled forex-proxy in 0.43s[0m
+2023.12.20 14:41:47 INFO  compiling forex-proxy (1 scala source)[0m
+2023.12.20 14:41:48 INFO  time: compiled forex-proxy in 1.27s[0m
+2023.12.20 14:41:48 INFO  compiling forex-proxy (1 scala source)[0m
+2023.12.20 14:41:48 INFO  time: compiled forex-proxy in 0.2s[0m
+2023.12.20 14:41:50 INFO  compiling forex-proxy (1 scala source)[0m
+2023.12.20 14:41:51 INFO  time: compiled forex-proxy in 1.25s[0m
+2023.12.20 14:41:53 INFO  compiling forex-proxy (1 scala source)[0m
+2023.12.20 14:41:55 INFO  time: compiled forex-proxy in 1.09s[0m
+Dec 20, 2023 2:42:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1680
+Dec 20, 2023 2:48:36 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Dec 20, 2023 2:49:22 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
