@@ -1,0 +1,15 @@
+# Metals and Bloop (Scala language server and build server)
+.metals/
+.bloop/
+.vscode/
+
+# SBT specific
+target/
+lib_managed/
+src_managed/
+project/project/
+project/target/
+
+# Logs
+logs/
+*.log

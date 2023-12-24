@@ -320,3 +320,476 @@ Dec 20, 2023 2:48:36 PM scala.meta.internal.pc.CompilerAccess retryWithCleanComp
 INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
 Dec 20, 2023 2:49:22 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
 INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Dec 20, 2023 2:52:42 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Dec 20, 2023 2:52:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1890
+Dec 20, 2023 2:52:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1894
+Dec 20, 2023 3:35:37 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 20, 2023 4:39:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2127
+Dec 20, 2023 4:39:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2129
+2023.12.20 16:47:44 INFO  compiling forex-proxy (1 scala source)[0m
+2023.12.20 16:47:46 INFO  time: compiled forex-proxy in 1.25s[0m
+2023.12.20 16:48:11 INFO  compiling forex-proxy (1 scala source)[0m
+2023.12.20 16:48:11 INFO  time: compiled forex-proxy in 0.51s[0m
+Dec 20, 2023 4:48:31 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.12.20 16:51:42 INFO  compiling forex-proxy (2 scala sources)[0m
+2023.12.20 16:51:42 INFO  time: compiled forex-proxy in 0.45s[0m
+2023.12.20 16:51:42 INFO  compiling forex-proxy (2 scala sources)[0m
+2023.12.20 16:51:42 INFO  time: compiled forex-proxy in 0.28s[0m
+2023.12.20 16:54:29 INFO  compiling forex-proxy (2 scala sources)[0m
+2023.12.20 16:54:29 INFO  time: compiled forex-proxy in 0.48s[0m
+2023.12.20 16:54:57 INFO  compiling forex-proxy (2 scala sources)[0m
+2023.12.20 16:54:57 INFO  time: compiled forex-proxy in 0.37s[0m
+Dec 20, 2023 4:54:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3224
+2023.12.20 16:55:00 INFO  compiling forex-proxy (2 scala sources)[0m
+2023.12.20 16:55:00 INFO  time: compiled forex-proxy in 0.25s[0m
+2023.12.20 16:55:46 INFO  compiling forex-proxy (3 scala sources)[0m
+2023.12.20 16:55:46 INFO  time: compiled forex-proxy in 0.43s[0m
+2023.12.20 16:56:45 INFO  compiling forex-proxy (3 scala sources)[0m
+2023.12.20 16:56:45 INFO  time: compiled forex-proxy in 0.67s[0m
+Dec 20, 2023 4:58:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3411
+2023.12.20 16:58:49 INFO  compiling forex-proxy (3 scala sources)[0m
+2023.12.20 16:58:49 INFO  time: compiled forex-proxy in 0.48s[0m
+Dec 20, 2023 4:59:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3458
+2023.12.20 19:29:18 INFO  compiling forex-proxy (3 scala sources)[0m
+2023.12.20 19:29:18 INFO  time: compiled forex-proxy in 0.45s[0m
+2023.12.20 19:30:24 INFO  compiling forex-proxy (3 scala sources)[0m
+2023.12.20 19:30:24 INFO  time: compiled forex-proxy in 0.46s[0m
+2023.12.20 19:30:48 INFO  compiling forex-proxy (3 scala sources)[0m
+2023.12.20 19:30:48 INFO  time: compiled forex-proxy in 0.6s[0m
+2023.12.20 19:30:48 INFO  compiling forex-proxy (3 scala sources)[0m
+2023.12.20 19:30:49 INFO  time: compiled forex-proxy in 0.62s[0m
+2023.12.20 19:31:20 INFO  compiling forex-proxy (3 scala sources)[0m
+2023.12.20 19:31:20 INFO  time: compiled forex-proxy in 0.36s[0m
+2023.12.20 19:31:30 INFO  compiling forex-proxy (3 scala sources)[0m
+Dec 20, 2023 7:31:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:743)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:731)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2112)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$.<clinit>(DebugProvider.scala:912)
+	at scala.meta.internal.metals.debug.DebugProvider.ensureNoWorkspaceErrors(DebugProvider.scala:388)
+	at scala.meta.internal.metals.MetalsLspService.startDebugProvider(MetalsLspService.scala:1940)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:852)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.12.20 19:31:30 INFO  time: compiled forex-proxy in 0.34s[0m
+Dec 20, 2023 7:31:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:743)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:731)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2112)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$.<clinit>(DebugProvider.scala:912)
+	at scala.meta.internal.metals.debug.DebugProvider.ensureNoWorkspaceErrors(DebugProvider.scala:388)
+	at scala.meta.internal.metals.MetalsLspService.startDebugProvider(MetalsLspService.scala:1940)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:852)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.12.20 19:31:45 INFO  compiling forex-proxy (3 scala sources)[0m
+2023.12.20 19:31:45 INFO  time: compiled forex-proxy in 0.27s[0m
+2023.12.20 19:32:08 INFO  compiling forex-proxy (3 scala sources)[0m
+Dec 20, 2023 7:32:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:743)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:731)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2112)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$: Cannot run class, since the workspace has errors.
+	at scala.meta.internal.metals.debug.DebugProvider$WorkspaceErrorsException$.<clinit>(DebugProvider.scala:912)
+	at scala.meta.internal.metals.debug.DebugProvider.ensureNoWorkspaceErrors(DebugProvider.scala:388)
+	at scala.meta.internal.metals.MetalsLspService.startDebugProvider(MetalsLspService.scala:1940)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:852)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at jdk.internal.reflect.GeneratedMethodAccessor26.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.12.20 19:32:08 INFO  time: compiled forex-proxy in 0.29s[0m
+2023.12.20 19:41:03 INFO  compiling forex-proxy (3 scala sources)[0m
+2023.12.20 19:41:03 INFO  time: compiled forex-proxy in 0.54s[0m
+2023.12.20 19:41:12 ERROR Failed to tokenize input for semantic tokens for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/services/rates/interpreters/OneFrameDummy.scala
+scala.meta.tokenizers.TokenizeException: <input>:13: error: can't use unescaped LF in character literals
+    print'
+          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:383)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:412)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.12.20 19:41:16 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 19:41:16 INFO  Unit <: F[Either[forex.services.rates.errors.Error,forex.domain.Rate]]?[0m
+2023.12.20 19:41:16 INFO  false[0m
+2023.12.20 19:41:16 INFO  time: compiled forex-proxy in 0.45s[0m
+2023.12.20 19:42:32 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 19:42:32 INFO  time: compiled forex-proxy in 0.37s[0m
+2023.12.20 19:43:06 INFO  compiling forex-proxy (4 scala sources)[0m
+Dec 20, 2023 7:43:06 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.12.20 19:43:06 INFO  time: compiled forex-proxy in 0.34s[0m
+2023.12.20 19:43:15 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 19:43:15 INFO  time: compiled forex-proxy in 0.27s[0m
+2023.12.20 19:43:15 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 19:43:15 INFO  time: compiled forex-proxy in 0.23s[0m
+2023.12.20 19:44:18 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 19:44:18 INFO  time: compiled forex-proxy in 0.44s[0m
+2023.12.20 19:44:29 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 19:44:29 INFO  time: compiled forex-proxy in 0.33s[0m
+Dec 20, 2023 7:45:02 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.12.20 19:46:07 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 19:46:07 INFO  time: compiled forex-proxy in 0.3s[0m
+2023.12.20 19:46:16 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 19:46:16 INFO  time: compiled forex-proxy in 0.29s[0m
+2023.12.20 22:27:40 INFO  Disconnecting from Bloop session...[0m
+2023.12.20 22:27:40 INFO  Shut down connection with build server.[0m
+2023.12.20 22:27:40 INFO  Shut down connection with build server.[0m
+2023.12.20 22:27:40 INFO  Shut down connection with build server.[0m
+2023.12.20 22:27:40 INFO  Attempting to connect to the build server...[0m
+2023.12.20 22:27:40 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.20 22:27:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.20 22:27:45 INFO  Attempting to connect to the build server...[0m
+2023.12.20 22:27:45 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.20 22:27:45 INFO  Attempting to connect to the build server...[0m
+2023.12.20 22:27:45 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.20 22:27:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/project/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.20 22:27:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/project/project/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.20 22:27:45 INFO  time: Connected to build server in 5.11s[0m
+2023.12.20 22:27:45 INFO  Connected to Build server: Bloop v1.5.13[0m
+2023.12.20 22:27:46 INFO  time: Imported build in 0.28s[0m
+2023.12.20 22:27:51 INFO  time: indexed workspace in 4.93s[0m
+2023.12.20 22:27:52 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 22:27:57 INFO  time: compiled forex-proxy in 4.77s[0m
+2023.12.20 22:57:53 INFO  running '/Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /var/folders/z7/xqfm1_x5077d1yfnb436vz5m0000gp/T/metals18088417693767588983/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2023.12.20 22:57:56 INFO  [info] welcome to sbt 1.8.0 (AdoptOpenJDK Java 11.0.11)[0m
+2023.12.20 22:57:56 INFO  [info] loading settings for project forex-proxy-build-build-build from metals.sbt ...[0m
+2023.12.20 22:57:59 INFO  [info] loading project definition from /Users/ywthoho/workspace/forex-proxy/project/project/project[0m
+2023.12.20 22:58:01 INFO  [info] loading settings for project forex-proxy-build-build from metals.sbt ...[0m
+2023.12.20 22:58:01 INFO  [info] loading project definition from /Users/ywthoho/workspace/forex-proxy/project/project[0m
+2023.12.20 22:58:04 INFO  [success] Generated .bloop/forex-proxy-build-build.json[0m
+2023.12.20 22:58:04 INFO  [success] Total time: 3 s, completed Dec 20, 2023, 10:58:05 PM[0m
+2023.12.20 22:58:04 INFO  [info] loading settings for project forex-proxy-build from metals.sbt,plugins.sbt ...[0m
+2023.12.20 22:58:05 INFO  [info] loading project definition from /Users/ywthoho/workspace/forex-proxy/project[0m
+2023.12.20 22:58:07 INFO  [success] Generated .bloop/forex-proxy-build.json[0m
+2023.12.20 22:58:07 INFO  [success] Total time: 2 s, completed Dec 20, 2023, 10:58:07 PM[0m
+2023.12.20 22:58:07 INFO  [info] loading settings for project forex-proxy from build.sbt ...[0m
+2023.12.20 22:58:07 INFO  [info] set current project to forex (in build file:/Users/ywthoho/workspace/forex-proxy/)[0m
+2023.12.20 22:58:08 INFO  [success] Generated .bloop/forex-proxy.json[0m
+2023.12.20 22:58:08 INFO  [success] Generated .bloop/forex-proxy-test.json[0m
+2023.12.20 22:58:08 INFO  [success] Total time: 0 s, completed Dec 20, 2023, 10:58:08 PM[0m
+2023.12.20 22:58:08 INFO  time: ran 'sbt bloopInstall' in 15s[0m
+2023.12.20 22:58:08 INFO  Disconnecting from Bloop session...[0m
+2023.12.20 22:58:08 INFO  Shut down connection with build server.[0m
+2023.12.20 22:58:08 INFO  Shut down connection with build server.[0m
+2023.12.20 22:58:08 INFO  Shut down connection with build server.[0m
+2023.12.20 22:58:08 INFO  Attempting to connect to the build server...[0m
+2023.12.20 22:58:08 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.20 22:58:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.20 22:58:08 INFO  Attempting to connect to the build server...[0m
+2023.12.20 22:58:08 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.20 22:58:08 INFO  Attempting to connect to the build server...[0m
+2023.12.20 22:58:08 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json[0m
+2023.12.20 22:58:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/project/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.20 22:58:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/project/project/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2023.12.20 22:58:08 INFO  time: Connected to build server in 0.2s[0m
+2023.12.20 22:58:08 INFO  Connected to Build server: Bloop v1.5.13[0m
+2023.12.20 22:58:13 INFO  time: indexed workspace in 4.98s[0m
+2023.12.20 22:58:19 INFO  time: code lens generation in 4.06s[0m
+2023.12.20 22:59:02 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 22:59:03 INFO  time: compiled forex-proxy in 1.35s[0m
+Dec 20, 2023 11:18:52 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Dec 20, 2023 11:32:28 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.12.20 23:33:02 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 23:33:03 INFO  time: compiled forex-proxy in 1.42s[0m
+2023.12.20 23:34:01 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 23:34:01 INFO  time: compiled forex-proxy in 0.96s[0m
+2023.12.20 23:34:07 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 23:34:09 INFO  time: compiled forex-proxy in 1.99s[0m
+2023.12.20 23:36:45 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 23:36:45 INFO  time: compiled forex-proxy in 0.74s[0m
+2023.12.20 23:40:25 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 23:40:25 INFO  time: compiled forex-proxy in 0.67s[0m
+2023.12.20 23:40:40 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 23:40:40 INFO  time: compiled forex-proxy in 0.55s[0m
+2023.12.20 23:41:16 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 23:41:16 INFO  cats.data.OptionT[F,org.http4s.Response[F]] <: F[?]?[0m
+2023.12.20 23:41:16 INFO  false[0m
+2023.12.20 23:41:16 INFO  time: compiled forex-proxy in 0.8s[0m
+Dec 20, 2023 11:47:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4595
+Dec 20, 2023 11:47:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4600
+Dec 20, 2023 11:47:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4594
+Dec 20, 2023 11:47:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4601
+2023.12.20 23:47:37 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 23:47:37 INFO  cats.data.OptionT[F,org.http4s.Response[F]] <: F[?]?[0m
+2023.12.20 23:47:37 INFO  false[0m
+2023.12.20 23:47:37 INFO  time: compiled forex-proxy in 0.71s[0m
+2023.12.20 23:54:21 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 23:54:21 INFO  time: compiled forex-proxy in 0.97s[0m
+2023.12.20 23:54:40 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 23:54:40 INFO  time: compiled forex-proxy in 0.8s[0m
+2023.12.20 23:55:04 INFO  compiling forex-proxy (4 scala sources)[0m
+2023.12.20 23:55:10 INFO  time: compiled forex-proxy in 6.44s[0m
+2023.12.20 23:55:10 INFO  compiling forex-proxy (1 scala source)[0m
+2023.12.20 23:55:11 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala[0m
+2023.12.20 23:55:13 INFO  time: compiled forex-proxy in 2.46s[0m
+2023.12.20 23:55:21 INFO  compiling forex-proxy (1 scala source)[0m
+2023.12.20 23:55:23 INFO  time: compiled forex-proxy in 2.08s[0m
+2023.12.21 12:41:57 INFO  Shutting down server[0m
+2023.12.21 12:41:57 INFO  shutting down Metals[0m
+2023.12.21 12:41:58 INFO  Shut down connection with build server.[0m
+2023.12.21 12:41:58 INFO  Shut down connection with build server.[0m
+2023.12.21 12:41:58 INFO  Shut down connection with build server.[0m
+2023.12.21 12:41:57 INFO  Exiting server[0m
+2023.12.21 12:48:13 INFO  Started: Metals version 1.2.0 in folders '/Users/ywthoho/workspace/forex-proxy' for client Visual Studio Code 1.85.0.
+2023.12.21 12:48:15 INFO  Attempting to connect to the build server...
+2023.12.21 12:48:15 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json
+2023.12.21 12:48:15 INFO  skipping build import with status 'Installed'
+2023.12.21 12:48:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.12.21 12:48:24 INFO  Attempting to connect to the build server...
+2023.12.21 12:48:24 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json
+2023.12.21 12:48:24 INFO  Attempting to connect to the build server...
+2023.12.21 12:48:24 INFO  Bloop uses /Users/ywthoho/.jabba/jdk/adopt@1.11.0-11/Contents/Home defined at /Users/ywthoho/.bloop/bloop.json
+2023.12.21 12:48:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/project/project/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.12.21 12:48:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/ywthoho/workspace/forex-proxy/project/.metals/bsp.trace.json or /Users/ywthoho/Library/Caches/org.scalameta.metals/bsp.trace.json
+2023.12.21 12:48:25 INFO  time: Connected to build server in 9.62s
+2023.12.21 12:48:25 INFO  Connected to Build server: Bloop v1.5.13
+2023.12.21 12:48:25 INFO  time: Imported build in 0.39s
+2023.12.21 12:48:50 INFO  no build target found for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2023.12.21 12:48:58 INFO  time: indexed workspace in 7.24s
+Dec 22, 2023 2:01:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12
+Dec 22, 2023 2:04:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 134
+2023.12.22 14:04:50 INFO  compiling forex-proxy (1 scala source)
+2023.12.22 14:04:52 INFO  Unit <: cats.effect.IO[cats.effect.ExitCode]?
+2023.12.22 14:04:52 INFO  false
+2023.12.22 14:04:52 INFO  time: compiled forex-proxy in 3.39s
+2023.12.22 14:05:19 INFO  compiling forex-proxy (1 scala source)
+2023.12.22 14:05:19 INFO  Unit <: cats.effect.IO[cats.effect.ExitCode]?
+2023.12.22 14:05:19 INFO  false
+2023.12.22 14:05:19 INFO  time: compiled forex-proxy in 0.97s
+2023.12.22 14:05:20 INFO  compiling forex-proxy (1 scala source)
+2023.12.22 14:05:20 INFO  Unit <: cats.effect.IO[cats.effect.ExitCode]?
+2023.12.22 14:05:20 INFO  false
+2023.12.22 14:05:20 INFO  time: compiled forex-proxy in 0.76s
+Dec 22, 2023 2:05:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 204
+2023.12.22 14:05:33 WARN  Could not find semantic tokens for: file:///Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/Module.scala
+Dec 22, 2023 2:05:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 236
+Dec 22, 2023 2:05:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 237
+2023.12.22 14:05:38 INFO  compiling forex-proxy (1 scala source)
+2023.12.22 14:05:38 INFO  Unit <: cats.effect.IO[cats.effect.ExitCode]?
+2023.12.22 14:05:38 INFO  false
+2023.12.22 14:05:38 INFO  time: compiled forex-proxy in 0.59s
+2023.12.22 14:05:42 INFO  compiling forex-proxy (2 scala sources)
+2023.12.22 14:05:42 INFO  Unit <: cats.effect.IO[cats.effect.ExitCode]?
+2023.12.22 14:05:42 INFO  false
+2023.12.22 14:05:43 INFO  time: compiled forex-proxy in 1.18s
+Dec 22, 2023 2:05:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 278
+2023.12.22 14:05:52 INFO  compiling forex-proxy (2 scala sources)
+2023.12.22 14:05:52 INFO  Unit <: cats.effect.IO[cats.effect.ExitCode]?
+2023.12.22 14:05:52 INFO  false
+2023.12.22 14:05:52 INFO  time: compiled forex-proxy in 0.78s
+2023.12.22 14:05:57 INFO  compiling forex-proxy (1 scala source)
+2023.12.22 14:06:03 INFO  time: compiled forex-proxy in 6.14s
+Dec 22, 2023 2:54:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 473
+Dec 22, 2023 2:54:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 474
+Dec 22, 2023 2:54:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 505
+2023.12.22 14:54:22 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:54:22 INFO  compiling forex-proxy (1 scala source)
+2023.12.22 14:54:22 INFO  Unit <: F[org.http4s.Response[F]]?
+2023.12.22 14:54:22 INFO  false
+2023.12.22 14:54:23 INFO  time: compiled forex-proxy in 1.11s
+2023.12.22 14:54:24 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:54:32 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:54:32 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:54:38 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:54:40 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:54:41 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:54:42 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:54:43 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:54:43 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:54:45 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:54:46 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:54:57 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:01 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:03 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:04 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:05 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:06 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:07 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:12 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:12 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:13 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:14 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:15 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:17 INFO  compiling forex-proxy (1 scala source)
+2023.12.22 14:55:17 INFO  time: compiled forex-proxy in 0.18s
+2023.12.22 14:55:18 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:19 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:20 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:20 INFO  compiling forex-proxy (1 scala source)
+2023.12.22 14:55:20 INFO  time: compiled forex-proxy in 0.37s
+2023.12.22 14:55:20 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:24 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:28 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:33 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:37 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:38 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:40 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:43 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:54 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:56 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:58 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:58 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:55:59 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:00 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:01 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:02 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:04 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:05 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:06 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:11 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:11 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:12 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:13 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:19 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:19 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:21 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:21 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:22 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:23 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:24 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:25 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:26 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+2023.12.22 14:56:26 WARN  Could not load snapshot text for /Users/ywthoho/workspace/forex-proxy/src/main/scala/forex/http/rates/RatesHttpRoutes.scala
+Dec 24, 2023 2:55:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 992
+2023.12.24 14:55:49 INFO  compiling forex-proxy (1 scala source)
+2023.12.24 14:55:52 INFO  time: compiled forex-proxy in 2.44s
+2023.12.24 14:56:06 INFO  compiling forex-proxy (1 scala source)
+2023.12.24 14:56:07 INFO  time: compiled forex-proxy in 1.12s
+Dec 24, 2023 2:56:31 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Dec 24, 2023 2:56:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1100
+2023.12.24 14:56:53 INFO  compiling forex-proxy (1 scala source)
+2023.12.24 14:56:53 INFO  time: compiled forex-proxy in 0.49s
+Dec 24, 2023 2:57:04 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+2023.12.24 14:57:05 INFO  compiling forex-proxy (1 scala source)
+2023.12.24 14:57:05 INFO  time: compiled forex-proxy in 0.37s
+2023.12.24 14:57:31 INFO  compiling forex-proxy (1 scala source)
+Dec 24, 2023 2:57:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1204
+Dec 24, 2023 2:57:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1205
+2023.12.24 14:57:33 INFO  time: compiled forex-proxy in 2.17s
+2023.12.24 14:58:07 INFO  time: code lens generation in 3.99s
+2023.12.24 14:58:07 INFO  time: code lens generation in 4.34s
+Dec 24, 2023 2:59:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/ywthoho/workspace/forex-proxy/.metals/.reports/metals-full/2023-12-24/r_compiler-error_(forex-proxy-build)_14-59-08-629.md
+Dec 24, 2023 3:08:50 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Dec 24, 2023 3:15:28 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Dec 24, 2023 3:15:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1613
