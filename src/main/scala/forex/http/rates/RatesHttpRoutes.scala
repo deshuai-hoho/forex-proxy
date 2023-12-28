@@ -12,6 +12,7 @@ import org.http4s.headers.Allow
 import org.http4s.Method
 import forex.domain.Currency
 import forex.programs.rates.errors
+import org.typelevel.ci.CIString
 
 class RatesHttpRoutes[F[_]: Sync](rates: RatesProgram[F]) extends Http4sDsl[F] {
 
@@ -25,26 +26,33 @@ class RatesHttpRoutes[F[_]: Sync](rates: RatesProgram[F]) extends Http4sDsl[F] {
   private val httpRoutes: HttpRoutes[F] = HttpRoutes.of[F] {
 
     // Validate query parameters
-    case GET -> Root :? OptionalFromQueryParam(fromOpt) +& OptionalToQueryParam(toOpt) =>
-      (fromOpt, toOpt) match {
-        case (Some(fromStr), Some(toStr)) =>
-          (Currency.fromString(fromStr), Currency.fromString(toStr)) match {
-            case (Some(from), Some(to)) =>
-              rates.get(RatesProgramProtocol.GetRatesRequest(from, to))
-                .flatMap(Sync[F].fromEither)
-                .flatMap( rate => Ok(rate.asGetApiResponse))
-                .handleErrorWith {
-                  case errors.Error.RateLookupFailed(msg) => InternalServerError(msg)
-                  case _ => InternalServerError("Internal server error")
+    case req @ GET -> Root :? OptionalFromQueryParam(fromOpt) +& OptionalToQueryParam(toOpt) =>
+      req.headers.get(CIString("token")) match {
+        case Some(_) => {
+          (fromOpt, toOpt) match {
+            case (Some(fromStr), Some(toStr)) =>
+              (Currency.fromString(fromStr), Currency.fromString(toStr)) match {
+                case (Some(from), Some(to)) =>
+                  rates.get(RatesProgramProtocol.GetRatesRequest(from, to))
+                    .flatMap(Sync[F].fromEither)
+                    .flatMap( rate => Ok(rate.asGetApiResponse))
+                    .handleErrorWith {
+                      case errors.Error.RateLookupFailed(msg) => InternalServerError(msg)
+                      case _ => InternalServerError("Internal server error")
+                  }
+                case (None, None) => BadRequest("Both 'from' and 'to' query parameters are invalid currencies.")
+                case (None, _) => BadRequest("'from' query parameter is an invalid currency.")
+                case (_, None) => BadRequest("'to' query parameter is an invalid currency.")
               }
-            case (None, None) => BadRequest("Both 'from' and 'to' query parameters are invalid currencies.")
-            case (None, _) => BadRequest("'from' query parameter is an invalid currency.")
-            case (_, None) => BadRequest("'to' query parameter is an invalid currency.")
+            case (None, None) => BadRequest("Missing both 'from' and 'to' query parameters.")
+            case (None, _) => BadRequest("Missing 'from' query parameter.")
+            case (_, None) => BadRequest("Missing 'to' query parameter.")
           }
-        case (None, None) => BadRequest("Missing both 'from' and 'to' query parameters.")
-        case (None, _) => BadRequest("Missing 'from' query parameter.")
-        case (_, None) => BadRequest("Missing 'to' query parameter.")
+        }
+        case None => BadRequest("Forbidden, Invalid Token")
       }
+
+      
     case _ => MethodNotAllowed(Allow(Method.GET))
   }
 
