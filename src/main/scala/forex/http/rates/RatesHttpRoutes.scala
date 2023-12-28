@@ -11,6 +11,7 @@ import org.http4s.server.Router
 import org.http4s.headers.Allow
 import org.http4s.Method
 import forex.domain.Currency
+import forex.programs.rates.errors
 
 class RatesHttpRoutes[F[_]: Sync](rates: RatesProgram[F]) extends Http4sDsl[F] {
 
@@ -33,6 +34,7 @@ class RatesHttpRoutes[F[_]: Sync](rates: RatesProgram[F]) extends Http4sDsl[F] {
                 .flatMap(Sync[F].fromEither)
                 .flatMap( rate => Ok(rate.asGetApiResponse))
                 .handleErrorWith {
+                  case errors.Error.RateLookupFailed(msg) => InternalServerError(msg)
                   case _ => InternalServerError("Internal server error")
               }
             case (None, None) => BadRequest("Both 'from' and 'to' query parameters are invalid currencies.")
