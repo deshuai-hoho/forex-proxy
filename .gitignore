@@ -3,12 +3,16 @@
 .bloop/
 .vscode/
 
+# Compiled class files
+*.class
+
 # SBT specific
 target/
 lib_managed/
 src_managed/
 project/project/
 project/target/
+project/.bloop/
 
 # Logs
 logs/
