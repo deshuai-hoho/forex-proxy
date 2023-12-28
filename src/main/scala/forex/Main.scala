@@ -5,6 +5,7 @@ import cats.effect._
 import forex.config._
 import fs2.Stream
 import org.http4s.blaze.server.BlazeServerBuilder
+import org.http4s.blaze.client.BlazeClientBuilder
 
 object Main extends IOApp {
 
@@ -17,8 +18,9 @@ class Application[F[_]: ConcurrentEffect: Timer] {
 
   def stream(ec: ExecutionContext): Stream[F, Unit] =
     for {
+      client <- Stream.resource(BlazeClientBuilder[F](ec).resource)
       config <- Config.stream("app")
-      module = new Module[F](config)
+      module = new Module[F](config, client)
       _ <- BlazeServerBuilder[F](ec)
             .bindHttp(config.http.port, config.http.host)
             .withHttpApp(module.httpApp)
