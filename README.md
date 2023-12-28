@@ -1,4 +1,6 @@
-# A local proxy for Forex rates
+# A local proxy for Forex rates [WIP]
+
+Expected complete time: 29th Dec
 
 ## Functional Requirements
 1. Returns an exchange rate when provided with 2 supported currencies by calling One-Frame;
