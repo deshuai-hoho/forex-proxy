@@ -16,14 +16,13 @@ import org.typelevel.ci.CIString
 import forex.common.cache.InMemoryCache
 import org.http4s.Response
 
-class RatesHttpRoutes[F[_]: Sync](rates: RatesProgram[F]) extends Http4sDsl[F] {
+class RatesHttpRoutes[F[_]: Sync](rates: RatesProgram[F], quotaUsage: InMemoryCache[String, Int]) extends Http4sDsl[F] {
 
   import Converters._, Protocol._
 
   private[http] val prefixPath = "/rates"
 
   private final val REQUEST_QUOTA_PER_TOKEN = 10000
-  private val quotaUsage = new InMemoryCache[String, Int]()
 
   object OptionalFromQueryParam extends OptionalQueryParamDecoderMatcher[String]("from")
   object OptionalToQueryParam extends OptionalQueryParamDecoderMatcher[String]("to")
@@ -38,7 +37,7 @@ class RatesHttpRoutes[F[_]: Sync](rates: RatesProgram[F]) extends Http4sDsl[F] {
         case (Some(fromStr), Some(toStr)) =>
           (Currency.fromString(fromStr), Currency.fromString(toStr)) match {
             case (Some(from), Some(to)) =>
-              rates.get(RatesProgramProtocol.GetRatesRequest(from, to))
+              rates.get(RatesProgramProtocol.GetRatesRequest(from, to), maybeToken.get)
                 .flatMap(Sync[F].fromEither)
                 .flatMap( rate => Ok(rate.asGetApiResponse))
                 .handleErrorWith {

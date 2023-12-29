@@ -28,6 +28,8 @@ class InMemoryCache[K, V] extends Cache[K, V] {
     cache.put(key, entry)
     ()
   }
+
+  override def clear(): Unit = cache.clear()
 }
 
 case class CacheEntry[V](value: V, expiryTime: Instant)

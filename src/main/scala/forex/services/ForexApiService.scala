@@ -13,8 +13,7 @@ import org.http4s.circe.CirceEntityDecoder._
 import cats.implicits._
 
 class ForexApiService[F[_]: Sync](client: Client[F]) {
-  private val token = "10dc303535874aeccc86a8251e6992f5"
-  def getRates(pair: Rate.Pair): F[Either[Error, List[OneFrameRate]]] = {
+  def getRates(pair: Rate.Pair, token: String): F[Either[Error, List[OneFrameRate]]] = {
     /**
       * For OneFrame API
       * * Successful return:

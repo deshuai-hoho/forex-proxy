@@ -10,16 +10,20 @@ import org.http4s._
 import org.http4s.implicits._
 import org.http4s.server.middleware.{ AutoSlash, Timeout }
 import org.http4s.client.Client
+import forex.common.cache.InMemoryCache
+import java.util.concurrent.{Executors, TimeUnit}
 
 class Module[F[_]: Concurrent: Timer](config: ApplicationConfig, client: Client[F]) {
 
+  val ownRequestQuata = new InMemoryCache[String, Int]()
+  setupQuotaResetScheduler()
+
   private val forexApiService = new ForexApiService[F](client)
   private val ratesService: RatesService[F] = new OneFrameLive[F](forexApiService)
-  //private val ratesService: RatesService[F] = RatesServices.dummy[F]
 
   private val ratesProgram: RatesProgram[F] = RatesProgram[F](ratesService)
 
-  private val ratesHttpRoutes: HttpRoutes[F] = new RatesHttpRoutes[F](ratesProgram).routes
+  private val ratesHttpRoutes: HttpRoutes[F] = new RatesHttpRoutes[F](ratesProgram, ownRequestQuata).routes
 
   type PartialMiddleware = HttpRoutes[F] => HttpRoutes[F]
   type TotalMiddleware   = HttpApp[F] => HttpApp[F]
@@ -38,4 +42,17 @@ class Module[F[_]: Concurrent: Timer](config: ApplicationConfig, client: Client[
 
   val httpApp: HttpApp[F] = appMiddleware(routesMiddleware(http).orNotFound)
 
+  private def setupQuotaResetScheduler(): Unit = {
+    /**
+      * TODO centralized scheduler for distribute system
+      */
+    val scheduler = Executors.newScheduledThreadPool(1)
+
+    scheduler.scheduleAtFixedRate(new Runnable {
+      override def run(): Unit = {
+        ownRequestQuata.clear()
+      }
+    }, 0, 1, TimeUnit.DAYS)
+    ()
+  }
 }
