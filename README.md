@@ -11,16 +11,15 @@ Expected complete time: 29th Dec
 
 ## Plan
 
-### Solution for functional Requirements
 To solve the conflict that our proxy service should have 10 times throughout than OneFrame, the intuitive method is trying to cache the query result in our service.
 
-* Assumptions
+### Assumptions
   * We have 9 currencies, the number of pairs will be 9 * (9-1) = 72;
   * Cache Expiry Time: 5 minutes (as per your requirement).
   * Daily Quota for OneFrame API: 1,000 requests per token.
   * Required Daily Quota for Your Service: 10,000 requests per token.
 
-* Scenario Analysis
+### Scenario Analysis
   * for one user(one token)
     * if only query one pair, each time we cache the result for 5 min, then we only need to query OneFrame 24*60/5 = 288 times a day, the user can query as much as he want.
     * if the user query 72 pairs together and for every 5 min, then each time his query will miss cache, which leads to 1000/72*5 = 69 min to use up the token's quota.
@@ -29,10 +28,12 @@ To solve the conflict that our proxy service should have 10 times throughout tha
     * if we have at least Math.ceil(288 * 72 / 1000) = 21 tokens we can achive a status that update all 72 pairs' rates every 5 min and therefore support target request quota.
     * no less than 21-tokens is a easy and reasonable target for a service.
     
-* Solution
+### Solution
   With the analysis above, for extreame cases we cannot support the target request quota. So instead of using each user's token to update the forex rates cache, it is more reasonable for this service to manage a token pool and use each token more averagely. Here we made another assumption.
 
   * Once users got their token, any amount usage under the quota of OneFrame will not affect their charge status.
+
+  <b>Process</b>
 
   The whole getRates process will be:
   1. User's Request comes in forex-proxy, record their quota. Reject it if excceed 10000.
@@ -56,9 +57,11 @@ To solve the conflict that our proxy service should have 10 times throughout tha
     * time point of the day
     * usage portion of the quota.
     * size of token pool
+  
   We can start with a simple one and optimize it by real-world data in a progressive way.
 
-  * SimpleThrottleStrategy
+  <b>SimpleThrottleStrategy</b>
+
     * After query OneFrame with `tokenA`, update its quota usage.
     * for `tokenA`, if its quota usage exceed:
       * 50%(500) and the size of tokenPool is smaller than:
