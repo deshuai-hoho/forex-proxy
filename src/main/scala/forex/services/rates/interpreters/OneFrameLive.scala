@@ -7,18 +7,18 @@ import forex.domain.{ Rate, Price, Timestamp }
 import cats.implicits._
 import cats.effect.Sync
 import java.time.{ OffsetDateTime }
-import forex.common.cache.InMemoryCache
+import forex.common.cache.CacheFactory
 import java.util.concurrent.PriorityBlockingQueue
 import scala.collection.mutable.HashSet
 import org.slf4j.LoggerFactory
 
-class OneFrameLive[F[_]: Sync](forexApiService: ForexApiService[F]) extends Algebra[F] {
+class OneFrameLive[F[_]: Sync](forexApiService: ForexApiService[F], quota: Int) extends Algebra[F] {
   private final val CACHE_TTL = 5 * 60 * 1000 // 5 minutes
-  private final val ONEFRAME_QUOTA = 1000
+  private final val ONEFRAME_QUOTA = quota
 
   private val logger = LoggerFactory.getLogger("http4s")
 
-  private val pairCache = new InMemoryCache[(String, String), Rate]()
+  private val pairCache = CacheFactory.createCache[(String, String), Rate]()
   private val tokenPool = new PriorityBlockingQueue[TokenQuota]()
   private val tokenSet = new HashSet[String]()
 
@@ -48,6 +48,11 @@ class OneFrameLive[F[_]: Sync](forexApiService: ForexApiService[F]) extends Alge
       // re-sort
       tokenPool.remove(tokenQuota)
       tokenPool.add(tokenQuota)
+
+      /**
+        * TODO
+        * token frozen
+        */
     }
     ()
   }

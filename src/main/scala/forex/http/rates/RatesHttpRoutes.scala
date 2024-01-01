@@ -13,16 +13,16 @@ import org.http4s.Method
 import forex.domain.Currency
 import forex.programs.rates.errors
 import org.typelevel.ci.CIString
-import forex.common.cache.InMemoryCache
+import forex.common.cache._
 import org.http4s.Response
 
-class RatesHttpRoutes[F[_]: Sync](rates: RatesProgram[F], quotaUsage: InMemoryCache[String, Int]) extends Http4sDsl[F] {
+class RatesHttpRoutes[F[_]: Sync](rates: RatesProgram[F], quotaUsage: Cache[String, Int], quota: Int) extends Http4sDsl[F] {
 
   import Converters._, Protocol._
 
   private[http] val prefixPath = "/rates"
 
-  private final val REQUEST_QUOTA_PER_TOKEN = 10000
+  private final val REQUEST_QUOTA_PER_TOKEN = quota
 
   object OptionalFromQueryParam extends OptionalQueryParamDecoderMatcher[String]("from")
   object OptionalToQueryParam extends OptionalQueryParamDecoderMatcher[String]("to")

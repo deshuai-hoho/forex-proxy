@@ -10,20 +10,20 @@ import org.http4s._
 import org.http4s.implicits._
 import org.http4s.server.middleware.{ AutoSlash, Timeout }
 import org.http4s.client.Client
-import forex.common.cache.InMemoryCache
 import java.util.concurrent.{Executors, TimeUnit}
+import forex.common.cache.CacheFactory
 
 class Module[F[_]: Concurrent: Timer](config: ApplicationConfig, client: Client[F]) {
 
-  val ownRequestQuata = new InMemoryCache[String, Int]()
+  val ownRequestQuata = CacheFactory.createCache[String, Int]()
   setupQuotaResetScheduler()
 
   private val forexApiService = new ForexApiService[F](client)
-  private val ratesService: RatesService[F] = new OneFrameLive[F](forexApiService)
+  private val ratesService: RatesService[F] = new OneFrameLive[F](forexApiService, config.requestQuota.sourceQuota)
 
   private val ratesProgram: RatesProgram[F] = RatesProgram[F](ratesService)
 
-  private val ratesHttpRoutes: HttpRoutes[F] = new RatesHttpRoutes[F](ratesProgram, ownRequestQuata).routes
+  private val ratesHttpRoutes: HttpRoutes[F] = new RatesHttpRoutes[F](ratesProgram, ownRequestQuata, config.requestQuota.directQuota).routes
 
   type PartialMiddleware = HttpRoutes[F] => HttpRoutes[F]
   type TotalMiddleware   = HttpApp[F] => HttpApp[F]
