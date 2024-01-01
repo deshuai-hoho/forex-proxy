@@ -83,9 +83,29 @@ To solve the conflict that our proxy service should have 10 times throughout tha
     * we have manage dozens of in-house tokens. 
     
     If this is the case then we coulld have initialize the token pool so that the service can handle the cold start scenario we described above.
- 
 
-  
 
+## Assignment Notes
+ I started this assignment late because of some family issues. So I would describe some imcomplete part of this assignment that I would keep working on if I have more time.
+ 1. Some in-memory data structure, they shall be abstracted and implemented like `cache`
+  * `Scheduler` to flush `quota` everyday
+  * `tokenPool` & `tokenSet`  should have been a abtract interface for distributed deployment
+ 2. Test
+   * Unit test:
+     * service logic in `OneFrameLive`
+     * Utility class test: class like InMemoryCache's functionality
+     * Data models: Validate integrity and constraints
+   * Integration Test:
+     * API endpoint test
+       * Error handling test
+     * Happy case test with multiple token
+     * Extream case test
+ 3. Collaboration on Git
+      About the way of Git operation for the team work, I have not really conducted in that during this process. So I would like describe my usual pratice about it.
+    * Checkout new branch for single task: `feature/*` or `bugfix/*`;
+    * Keep each commit focused on some certain point, like feature development, unit test, dependency import, utils maintainance, .etc.
+    * Create a PR width detailed task description, review suggestion, and use `Squash & Merge` for a more clear and concise commit history in the main branch.
+ 4. Some of the more complex code in `OneFrameLive` doesn't align with `functional programming`, they could be refactored.
+
+   
   
-        
