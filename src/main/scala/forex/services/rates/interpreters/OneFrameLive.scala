@@ -6,11 +6,16 @@ import forex.services.rates.errors.Error
 import forex.domain.{ Rate, Price, Timestamp }
 import cats.implicits._
 import cats.effect.Sync
-import java.time.{ OffsetDateTime }
+import java.time.{ OffsetDateTime, Duration }
 import forex.common.cache.CacheFactory
 import java.util.concurrent.PriorityBlockingQueue
 import scala.collection.mutable.HashSet
 import org.slf4j.LoggerFactory
+import java.time.Instant
+
+case class TokenQuota(token: String, var quota: Int) extends Comparable[TokenQuota] {
+  override def compareTo(o: TokenQuota): Int = o.quota.compareTo(this.quota)
+}
 
 class OneFrameLive[F[_]: Sync](forexApiService: ForexApiService[F], quota: Int) extends Algebra[F] {
   private final val CACHE_TTL = 5 * 60 * 1000 // 5 minutes
@@ -21,16 +26,59 @@ class OneFrameLive[F[_]: Sync](forexApiService: ForexApiService[F], quota: Int) 
   private val pairCache = CacheFactory.createCache[(String, String), Rate]()
   private val tokenPool = new PriorityBlockingQueue[TokenQuota]()
   private val tokenSet = new HashSet[String]()
+  private val frozenToken = CacheFactory.createCache[String, (Int, Instant)]()
 
-  case class TokenQuota(token: String, var quota: Int) extends Comparable[TokenQuota] {
-    override def compareTo(o: TokenQuota): Int = o.quota.compareTo(this.quota)
+  private def selectToken(token: String): Option[TokenQuota] = {
+    frozenToken.get(token) match {
+      case Some(value) => {
+        val (quota: Int, freezeTime: Instant) = value
+        if (freezeTime.isAfter(Instant.now)) {
+          tokenPool.synchronized {
+            tokenPool.add(TokenQuota(token, quota))
+            val tokenQuota = tokenPool.poll()
+            tokenPool.add(tokenQuota)
+            Some(tokenQuota)
+          }
+        } else {
+          None
+        }
+      }
+      case None => {
+        val tokenQuota = tokenPool.poll()
+        tokenPool.add(tokenQuota)
+        Some(tokenQuota)
+      }
+    }
   }
 
-  private def selectToken(): TokenQuota = {
-    tokenPool.synchronized {
-      val tokenQuota = tokenPool.poll()
-      tokenPool.add(tokenQuota)
-      tokenQuota
+  private def freezeToken(tokenQuota: TokenQuota, duration: Duration): Unit = {
+    tokenPool.remove(tokenQuota)
+
+    frozenToken.put(tokenQuota.token, (tokenQuota.quota, Instant.now().plus(duration)))
+
+    ()
+  }
+  /**
+    * SimpleFrozenStrategy
+    *
+    * @param tokenQuota
+    */
+  private def freezeTokenIfNeeded(tokenQuota: TokenQuota): Unit = {
+    val percentageLeft = tokenQuota.quota.toDouble / ONEFRAME_QUOTA
+    if (percentageLeft < 0.05) {
+      if (tokenPool.size() < 5) {
+        freezeToken(tokenQuota, Duration.ofHours(2))
+      } else if (tokenPool.size() < 10) {
+        freezeToken(tokenQuota, Duration.ofMinutes(90))
+      }
+    } else if (percentageLeft < 0.2) {
+      if (tokenPool.size() < 5) {
+        freezeToken(tokenQuota, Duration.ofHours(1))
+      } else if (tokenPool.size() < 10) {
+        freezeToken(tokenQuota, Duration.ofMinutes(30))
+      }
+    } else if (percentageLeft < 0.5 && tokenPool.size() < 3) {
+      freezeToken(tokenQuota, Duration.ofMinutes(30))
     }
   }
 
@@ -40,7 +88,6 @@ class OneFrameLive[F[_]: Sync](forexApiService: ForexApiService[F], quota: Int) 
       case Some(value) => pairCache.put((value.pair.from.toString, value.pair.to.toString), value, CACHE_TTL)
       case None => {}
     }
-    
     // update token quota
     tokenPool.synchronized {
       tokenQuota.quota -= 1
@@ -48,11 +95,7 @@ class OneFrameLive[F[_]: Sync](forexApiService: ForexApiService[F], quota: Int) 
       // re-sort
       tokenPool.remove(tokenQuota)
       tokenPool.add(tokenQuota)
-
-      /**
-        * TODO
-        * token frozen
-        */
+      freezeTokenIfNeeded(tokenQuota)
     }
     ()
   }
@@ -81,13 +124,20 @@ class OneFrameLive[F[_]: Sync](forexApiService: ForexApiService[F], quota: Int) 
       tokenSet.add(token)
       tokenPool.add(TokenQuota(token, ONEFRAME_QUOTA))
     }
+
     // check rates cache
     pairCache.get((pair.from.toString, pair.to.toString)) match {
       case Some(rate) =>
         logger.info(s"Rate found in cache for pair ${pair.from} to ${pair.to}")
         Sync[F].pure(rate.asRight)
       case None =>
-        getRatesFromApi(pair, selectToken())
+        selectToken(token) match {
+          case Some(tokenQuota) =>
+            getRatesFromApi(pair, tokenQuota)
+          case _ =>
+            Sync[F].pure(Error.OneFrameLookupFailed(s"Resource constraints, please try later").asLeft)
+        }
+        
     }
   }
 }

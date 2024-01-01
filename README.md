@@ -69,8 +69,8 @@ To solve the conflict that our proxy service should have 10 times throughout tha
         * After query OneFrame with `tokenA`, update its quota usage.
         * for `tokenA`, if its quota usage exceed:
         * 50%(500) and the size of tokenPool is smaller than:
-            * 5, freeze 30 min
-        * 60%(670) and the size of tokenPool is smaller than:
+            * 3, freeze 30 min
+        * 80%(670) and the size of tokenPool is smaller than:
             * 10, freeze 45 min
             * 5, freeze 1 hour
         * 95% and the size of tokenPool is smaller than:

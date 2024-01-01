@@ -35,7 +35,6 @@ class ForexApiService[F[_]: Sync](client: Client[F]) {
       uri"http://localhost:8080/rates".withQueryParam("pair", pair.from.toString + pair.to.toString)
     ).withHeaders(Header.Raw(CIString("token"), token))
 
-    println(request)
     client.expect[List[OneFrameRate]](request).attempt.map {
       case Right(rates) => Right(rates)
       case Left(error) => Left(OneFrameLookupFailed(error.getMessage))
